@@ -90,21 +90,10 @@
             <feature name="LocationManager" >
                 <param name="android-package" value="com.unarin.cordova.beacon.LocationManager"/>
             </feature>
-		<access origin="*"/>
-		<allow-intent href="http://*/*"/>
-		<allow-intent href="https://*/*"/>
-		<plugin name="cordova-plugin-whitelist" spec="1.2.0"/>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
 		<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-		<uses-permission android:name="android.permission.INTERNET" />
-        </config-file>
-	   
-	 <config-file target="res/xml/network_security_config.xml" parent="/*">
-		<network-security-config>
-		     <base-config cleartextTrafficPermitted="true"/>
-		</network-security-config>
         </config-file>
 	    
         <source-file src="src/android/LocationManager.java" target-dir="src/com/unarin/cordova/beacon" />
