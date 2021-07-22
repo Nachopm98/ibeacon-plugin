@@ -92,14 +92,6 @@
             </feature>
         </config-file>
 	    
-	<config-file target="res/xml/network_security_config.xml" parent="/*">
-		<network-security-config>
-		    <domain-config cleartextTrafficPermitted="true">
-			<domain includeSubdomains="true">api.example.com(to be adjusted)</domain>
-		    </domain-config>
-		</network-security-config>
-        </config-file>
-	    
         <config-file target="AndroidManifest.xml" parent="/manifest">
 		<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 		<uses-permission android:name="android.permission.INTERNET" />
