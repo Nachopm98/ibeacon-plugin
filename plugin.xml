@@ -93,7 +93,8 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
-			<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+		<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+		<uses-permission android:name="android.permission.INTERNET" />
         </config-file>
 	   
 	 <config-file target="res/xml/network_security_config.xml" parent="/*">
