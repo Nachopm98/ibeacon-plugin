@@ -94,9 +94,7 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
 			<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-			<application 
-				     android:usesCleartextTraffic="true" tools:replace="android:usesCleartextTraffic >
-			</application>
+			<application android:usesCleartextTraffic="true" tools:replace="android:usesCleartextTraffic />
         </config-file>
         <source-file src="src/android/LocationManager.java" target-dir="src/com/unarin/cordova/beacon" />
         <source-file src="src/android/IBeaconServiceNotifier.java" target-dir="src/com/unarin/cordova/beacon" />
