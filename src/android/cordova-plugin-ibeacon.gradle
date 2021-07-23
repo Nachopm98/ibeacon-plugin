@@ -4,8 +4,7 @@ buildscript {
 }
 
     dependencies {
-        implementation  'org.altbeacon:android-beacon-library:2.14'
-        classpath "com.android.tools.build:gradle:5.2.1"
+        compile  'org.altbeacon:android-beacon-library:2.14'
     }
 }
 android {
